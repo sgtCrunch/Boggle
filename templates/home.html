@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Boggle{% endblock %}
+
+{% block content %}
+
+<div id="Game-Area">
+    
+    <div>
+        <span id ="timer">Timer: 60</span>
+        <span id ="score">Score: 0</span>
+    </div>
+
+    {% include 'boggle-board.html' %}
+
+    <div id= "form">
+        <input type ="text" name="guess"/>
+        <button class="button">Submit</button>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="static/boggle.js"></script>
+
+{% endblock %}

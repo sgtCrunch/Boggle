@@ -1,0 +1,9 @@
+<div id="boggle-frame">
+    
+    {% for row in board %}
+    {% for letter in row %}
+    <div class = "boggle-tile">{{ letter }}</div>
+    {% endfor %}
+    {% endfor %}
+
+</div>
